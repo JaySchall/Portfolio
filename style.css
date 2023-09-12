@@ -5,6 +5,7 @@
     --eerie-black-1: hsl(240, 2%, 13%);
     --eerie-black-2: hsl(240, 2%, 12%);
     --smoky-black: hsl(0, 0%, 7%);
+    scroll-behavior: smooth;
 }
 body, html {
     height: 100%;
@@ -80,9 +81,16 @@ h3{
     font-size: 40px;
     margin-bottom: 0;
 }
-.title {
+.navigation {
     width: 70%;
-    margin-top: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 36px;
+    background-color: var(--smoky-black);
+    border-radius: 20px;
+    border-color: var(--white-3);
+    border-style: solid;
 }
 article {
     
@@ -100,10 +108,11 @@ article {
     margin: auto;
 }
 .core section{
+    padding-top: 3%;
     width: 90%;
     margin: auto;
     margin-top : 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .owner {
     text-align: center;
@@ -119,7 +128,7 @@ article {
     font-size: 30px;
     border-radius: 8px;
     border-style: solid;
-    border-color: var(--smoky-black);
+    border-color: var(--white-3);
 }
 nav ul,article ul {
     display: flex;
@@ -129,14 +138,81 @@ nav ul,article ul {
     list-style: none;
 }
 li a,p{
+    text-decoration: none;
     font-size: 26px;
     color: var(--white-3);
 }
-button{
+
+nav a{
     font: inherit;
     cursor: pointer;
     background: none;
     border: none;
     padding: 20px 7px;
     font-size: 30px;
+    transition: .6s;
+}
+nav a:hover{
+    color: #f779c5;
+    text-decoration: underline;
+  }
+.skillflex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.grid{
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+#skills ul{
+    display: flex;
+    flex-direction: row;
+}
+#skills li{
+padding-right: 30px;
+}
+
+@media (max-width: 800px) {
+    .background-object{
+        height: 40px;
+    }
+    .navigation{
+        width: 100%;
+    }
+    .core{
+        width: 100%;
+        background: none;
+    }
+    .core section{
+        background-color: var(--eerie-black-2);
+        padding: 5%;
+    }
+    p{
+        font-size: 10px;
+    }
+    a{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+        
+    }
+    h3{
+        font-size: 20px;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav a{
+        padding: 20px 7px;
+        font-size: 10px;
+        transition: .6s;
+    }
+    .skillflex{
+        flex-direction: column;
+    }
 }

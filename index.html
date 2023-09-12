@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Pulsing Background</title>
+    <link href="images/Fuecoco.png" rel="icon" type="image/png" />
+    <title>Jonathan Schall Portfolio</title>
 </head>
 <body>
     <div class="background-container">
@@ -17,45 +18,59 @@
         <!-- Add your background objects here -->
     </div>
     <main>
-        <article class="title">
-            <div class="owner">
-                <h1>Jonathan Schall</h1>
-                <p>Software Developer</p>
-            </div>
-            <ul>
-                <li>
-                    <a href="">jonathan.c.schall@gmail.com</a>
-                </li>
-                <li>
-                    <a href="">734-306-7799</a>
-                </li>
-                <li>
-                    <p>Plymouth. MI, USA</p>
-                </li>
-                
-            </ul>
-        </article>
-        <div class="core">
+        <header class="navigation">
             <nav>
                 <ul>
                     <li>
-                        <button class="">About</button>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <button class="">Projects</button>
+                        <a href="#education">Education</a>
                     </li>
                     <li>
-                        <button class="">Resume</button>
+                        <a href="#experience">Experience</a>
                     </li>
                     <li>
-                        <button class="">Contact</button>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
                     </li>
                 </ul>
             </nav>
-            <section class="about">
+            
+        </header>
+        <div class="core">
+            
+            <section id="about">
                     <h2>About</h2>
+                    <div class="skillflex">
+                        <div class="owner">
+                            <h1>Jonathan Schall</h1>
+                            <p>Software Developer</p>
+                        </div>
+                        <div>
+                            <h3>Personal Information</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/JaySchall">github.com/JaySchall</a>
+                                </li>
+                                <li>
+                                    <p>jonathan.c.schall@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p>734-306-7799</p>
+                                </li>
+                                <li>
+                                    <p>Plymouth. MI, USA</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
             </section>
-            <section class="education">
+            <section id="education">
                     <h2>Education</h2>
                     <div>
                         <h3>University of Michigan Dearborn</h3>
@@ -63,7 +78,7 @@
                         <p>GPA: 3.97</p>
                     </div>
             </section>
-            <section class="experience">
+            <section id="experience">
                     <h2>Experience</h2>
                     <div>
                         <h3>Computer Vision Research Assistant at U of M Dearborn</h3>
@@ -92,11 +107,64 @@
                         </ul>
                     </div>
             </section>
-            <section class="projects">
+            <section id="projects">
                     <h2>Projects</h2>
+                    <div>
+                        <h3>Pokemon Card Search Engine</h3>
+                        <ul>
+                            <li><p>Search engine capable of searching through over 13,000 Pokemon cards using natural language processing and info retrieval</p></li>
+                            <li><p>Uses python to generate an inverted index and to display the cards </p></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Search-A-Meal Site</h3>
+                        <ul>
+                            <li><p>Django web app designed to provide an easy way to search and keep track of recipes. Users can create an account and bookmark recipes to save them in their account</p></li>
+                            <li><p>All recipes and user data stored inside SQLite database</p></li>
+                        </ul>
+                    </div>
             </section>
-            <section class="skills">
+            <section id="skills">
                     <h2>Skills</h2>
+                    <div class="grid">
+                        <div>
+                            <h3>Languages</h3>
+                            <ul>
+                                <li><p>Python</p></li>
+                                <li><p>C++</p></li>
+                                <li><p>C#</p></li>
+                                <li><p>Java</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Computer Vision</h3>
+                            <ul>
+                                <li><p>YOLO</p></li>
+                                <li><p>OpenCV</p></li>
+                                <li><p>Darknet</p></li>
+                                <li><p>Google Colab</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Web Development</h3>
+                            <ul>
+                                <li><p>Html</p></li>
+                                <li><p>CSS</p></li>
+                                <li><p>Javascript</p></li>
+                                <li><p>Django</p></li>
+                                <li><p>Flask</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Database</h3>
+                            <ul>
+                                <li><p>SQL</p></li>
+                                <li><p>SQLite</p></li>
+                                <li><p>Firebase</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
             </section>
         </div>
     </main>
