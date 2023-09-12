@@ -86,7 +86,11 @@ h3{
     position: fixed;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 3%;
+    top: 36px;
+    background-color: var(--smoky-black);
+    border-radius: 20px;
+    border-color: var(--white-3);
+    border-style: solid;
 }
 article {
     
@@ -124,7 +128,7 @@ article {
     font-size: 30px;
     border-radius: 8px;
     border-style: solid;
-    border-color: var(--smoky-black);
+    border-color: var(--white-3);
 }
 nav ul,article ul {
     display: flex;
@@ -134,6 +138,7 @@ nav ul,article ul {
     list-style: none;
 }
 li a,p{
+    text-decoration: none;
     font-size: 26px;
     color: var(--white-3);
 }
@@ -154,4 +159,16 @@ nav a:hover{
 .skillflex{
     display: flex;
     justify-content: space-evenly;
+}
+.grid{
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+#skills ul{
+    display: flex;
+    flex-direction: row;
+}
+#skills li{
+padding-right: 30px;
 }
