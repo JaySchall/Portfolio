@@ -5,6 +5,7 @@
     --eerie-black-1: hsl(240, 2%, 13%);
     --eerie-black-2: hsl(240, 2%, 12%);
     --smoky-black: hsl(0, 0%, 7%);
+    scroll-behavior: smooth;
 }
 body, html {
     height: 100%;
@@ -80,9 +81,12 @@ h3{
     font-size: 40px;
     margin-bottom: 0;
 }
-.title {
+.navigation {
     width: 70%;
-    margin-top: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 3%;
 }
 article {
     
@@ -100,10 +104,11 @@ article {
     margin: auto;
 }
 .core section{
+    padding-top: 3%;
     width: 90%;
     margin: auto;
     margin-top : 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .owner {
     text-align: center;
@@ -132,6 +137,7 @@ li a,p{
     font-size: 26px;
     color: var(--white-3);
 }
+
 nav a{
     font: inherit;
     cursor: pointer;
