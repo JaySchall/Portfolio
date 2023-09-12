@@ -145,3 +145,7 @@ nav a:hover{
     color: #f779c5;
     text-decoration: underline;
   }
+.skillflex{
+    display: flex;
+    justify-content: space-evenly;
+}
