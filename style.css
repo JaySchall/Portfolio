@@ -172,3 +172,47 @@ nav a:hover{
 #skills li{
 padding-right: 30px;
 }
+
+@media (max-width: 800px) {
+    .background-object{
+        height: 40px;
+    }
+    .navigation{
+        width: 100%;
+    }
+    .core{
+        width: 100%;
+        background: none;
+    }
+    .core section{
+        background-color: var(--eerie-black-2);
+        padding: 5%;
+    }
+    p{
+        font-size: 10px;
+    }
+    a{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+        
+    }
+    h3{
+        font-size: 20px;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav a{
+        padding: 20px 7px;
+        font-size: 10px;
+        transition: .6s;
+    }
+    .skillflex{
+        flex-direction: column;
+    }
+}
