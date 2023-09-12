@@ -132,11 +132,16 @@ li a,p{
     font-size: 26px;
     color: var(--white-3);
 }
-button{
+nav a{
     font: inherit;
     cursor: pointer;
     background: none;
     border: none;
     padding: 20px 7px;
     font-size: 30px;
+    transition: .6s;
 }
+nav a:hover{
+    color: #f779c5;
+    text-decoration: underline;
+  }
