@@ -1,6 +1,7 @@
 :root {
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 96%);
+    --white-3: hsl(0, 0%, 88%);
     --eerie-black-1: hsl(240, 2%, 13%);
     --eerie-black-2: hsl(240, 2%, 12%);
     --smoky-black: hsl(0, 0%, 7%);
@@ -8,7 +9,6 @@
 body, html {
     height: 100%;
     margin: 0;
-    overflow: hidden;
 }
 
 .background-container {
@@ -60,7 +60,7 @@ body, html {
         opacity: 1;
     }
 }
-h1,h2,h3,h4,p,a,button{
+h1,h2,h3,h4,p,a,button,ul{
     color: var(--white-2);
 }
 p{
@@ -71,6 +71,14 @@ a{
 }
 h1{
     font-size: 60px;
+}
+h2{
+    font-size: 50px;
+    
+}
+h3{
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .title {
     width: 70%;
@@ -86,11 +94,17 @@ article {
     box-shadow: var(--shadow-1);
     z-index: 1;
   }
-  .core{
+.core{
     background: var(--eerie-black-2);
     width: 70%;
     margin: auto;
-  }
+}
+.core section{
+    width: 90%;
+    margin: auto;
+    margin-top : 20px;
+    margin-bottom: 200px;
+}
 .owner {
     text-align: center;
     margin-bottom: 40px;
@@ -107,15 +121,16 @@ article {
     border-style: solid;
     border-color: var(--smoky-black);
 }
-ul {
+nav ul,article ul {
     display: flex;
     justify-content: space-evenly;
   }
-li {
+  nav ul li,article ul li {
     list-style: none;
 }
 li a,p{
     font-size: 26px;
+    color: var(--white-3);
 }
 button{
     font: inherit;
