@@ -82,6 +82,10 @@ h3{
     border-color: var(--white-3);
     border-style: solid;
 }
+.navigation ul{
+    padding: 0;
+}
+
 article {
     
     margin: auto;
@@ -187,20 +191,20 @@ padding-right: 30px;
         padding: 5%;
     }
     p{
-        font-size: 10px;
+        font-size: 12px;
     }
     a{
-        font-size: 10px;
+        font-size: 12px;
     }
     h1{
         font-size: 40px;
     }
     h2{
-        font-size: 30px;
+        font-size: 26px;
         
     }
     h3{
-        font-size: 20px;
+        font-size: 18px;
     }
     .grid{
         grid-template-columns: repeat(1, 1fr);
@@ -212,5 +216,8 @@ padding-right: 30px;
     }
     .skillflex{
         flex-direction: column;
+    }
+    .skillflex a, .skillflex p{
+        font-size: 16px;
     }
 }
